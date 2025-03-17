@@ -7,4 +7,109 @@
 html, body {
     height: 100%;
     overflow: hidden;
+    background-color: #2D8E2D;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    background-color: #8B7E2F;
+    height: 90px;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.486);
+}
+
+.content {
+    display: grid;
+    padding: 40px;
+    gap: 20px;
+    height: 90vh; 
+}
+
+/* Diamonds section */
+.diamonds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.diamond {
+    width: 120px;
+    height: 120px;  
+    background-color: #FF0000;
+    border: 2px solid black;
+    transform: rotate(45deg);
+}
+/* Here I am positioning these diamnods */
+.diamond:nth-child(1){
+    grid-row-start: 2;
+}
+.diamond:nth-child(2){
+    grid-column-start: 2;
+}
+
+/* Middle section with lines and circle */
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.middle-section-position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.line {
+    height: 18px;
+    width: 120px;
+    background-color: #0000FF;
+    border: 2px solid black;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #389286;
+    border: 2px solid black;
+}
+
+/* My box with abc text */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20rem;
+    height: 100%;
+    background-color: white;
+    justify-self: center; 
+    align-self: center;
+    grid-column: 3;       
+    grid-row: 1 / 4;    
+    border: 2px solid black;
+}
+.box span{
+    margin-top: 30px;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+
+/* (> 900px) */
+@media (min-width: 901px) {
+.content{
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr;
+}   
 }
