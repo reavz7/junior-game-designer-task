@@ -109,6 +109,20 @@ body {
 
 
 
+/*  (583px - 900px) */
+@media (min-width: 583px) and (max-width: 900px) {
+  .box {
+    background-color: #d03434;
+  }
+  .content {
+    grid-template-rows: 1fr 1fr;
+  }
+  .middle-section-position {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
 /* (> 900px) */
 @media (min-width: 901px) {
   .content {
