@@ -169,3 +169,75 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
+
+/* Animations */
+
+/* diamond glitch effect on hover */
+.diamond:hover {
+  animation: subtleGlitch 0.3s steps(2) infinite;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+@keyframes subtleGlitch {
+  0% {
+    transform: rotate(45deg) translate(0);
+    background-color: #ff0000;
+  }
+  25% {
+    transform: rotate(45deg) translate(-2px, 1px);
+    background-color: #ff3030;
+  }
+  50% {
+    transform: rotate(45deg) translate(1px, -1px);
+    background-color: #ff0000;
+  }
+  75% {
+    transform: rotate(45deg) translate(2px, 1px);
+    background-color: #ff5050;
+  }
+  100% {
+    transform: rotate(45deg) translate(0);
+    background-color: #ff0000;
+  }
+}
+
+/* circle "flashing" effect */
+.circle {
+  animation: flashBright 1.5s infinite;
+}
+
+@keyframes flashBright {
+  0%, 100% { 
+    background-color: #389286; 
+    box-shadow: 0 0 0 rgba(56, 146, 134, 0);
+  }
+  25%, 75% {
+    background-color: #389286;
+    box-shadow: 0 0 5px rgba(56, 146, 134, 0.3);
+  }
+  50% { 
+    background-color: #6fffeb; 
+    box-shadow: 0 0 25px rgba(111, 255, 235, 0.8);
+  }
+}
+
+
+/* Box animation on load */
+.box {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateX(30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Text animation */
+.box span {
+  animation: textPulse 3s infinite alternate;
+}
+
+@keyframes textPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
