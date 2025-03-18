@@ -9,25 +9,26 @@ body {
   overflow: hidden;
   background-color: #2d8e2d;
   font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .header {
   background-color: #8b7e2f;
-  height: 90px;
+  height: 5.625rem;
   width: 100%;
   border-bottom: 2px solid rgba(0, 0, 0, 0.486);
 }
 
 .content {
   display: grid;
-  padding: 40px;
-  gap: 20px;
+  padding: 2.5rem;
+  gap: 1.25rem;
   height: 90vh;
 }
 
@@ -40,8 +41,8 @@ body {
 }
 
 .diamond {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   background-color: #ff0000;
   border: 2px solid black;
   transform: rotate(45deg);
@@ -59,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .middle-section-position {
   display: flex;
@@ -69,19 +70,19 @@ body {
 .lines {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .line {
-  height: 18px;
-  width: 120px;
+  height: 1.125rem;
+  width: 7.5rem;
   background-color: #0000ff;
   border: 2px solid black;
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   background-color: #389286;
   border: 2px solid black;
@@ -102,8 +103,8 @@ body {
   border: 2px solid black;
 }
 .box span {
-  margin-top: 30px;
-  font-size: 34px;
+  margin-top: 1.875rem;
+  font-size: 2.125rem;
   text-transform: uppercase;
 }
 
@@ -121,19 +122,19 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .diamond {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
   }
   .line {
-    height: 12px;
-    width: 100px;
+    height: 0.75rem;
+    width: 6.25rem;
     background-color: #0000ff;
     border: 2px solid black;
   }
 
   .circle {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: #389286;
     border: 2px solid black;
